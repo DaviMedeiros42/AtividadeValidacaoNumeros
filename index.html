@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- 
+        Define o conjunto de caracteres utilizado no documento.
+        UTF-8 permite exibir corretamente acentos e caracteres especiais.
+    -->
+    <meta charset="UTF-8">
+
+    <!-- 
+        Configuração de responsividade da página.
+        Faz com que o layout se adapte em celulares e tablets.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+        Título exibido na aba do navegador.
+    -->
+    <title>Exemplo Exercício Desvio Condicional – Validação Número</title>
+
+    <!-- 
+        Importação do arquivo CSS responsável
+        pela estilização visual da página.
+    -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- 
+        Container principal da aplicação.
+        Utilizado para agrupar todos os elementos visuais.
+    -->
+    <div class="container">
+
+        <!-- 
+            Título principal da página.
+            Destaca o objetivo do sistema.
+        -->
+        <h1>Validação de Números</h1>
+
+        <!-- 
+            Campo de entrada numérica.
+            O usuário deverá informar um número para validação.
+        -->
+        <input 
+            type="number"
+            id="numero"
+            placeholder="Digite um número"
+        >
+
+        <!-- 
+            Botão responsável por executar a função validarNumero().
+            O evento onclick chama a função JavaScript ao clicar.
+        -->
+        <button onclick="validarNumero()">
+            Validar
+        </button>
+
+        <!-- 
+            Área destinada à exibição das mensagens
+            de validação para o usuário.
+        -->
+        <p id="mensagem"></p>
+
+    </div>
+
+    <!-- 
+        Importação do arquivo JavaScript.
+        O script é carregado ao final do body
+        para melhorar o carregamento da página.
+    -->
+    <script src="script.js"></script>
+
+</body>
+</html>
